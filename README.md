@@ -6,11 +6,23 @@ A modern, interactive portfolio website built with Angular.
 
 Watch the demo video to see the portfolio in action:
 
-**📹 [Click here to watch/download the demo video](https://github.com/Rallycode/Portfolio-Game-Theme/raw/main/demo/20260210-1622-13.5774142.mp4)**
+[![Demo Video - Click to Play](https://img.shields.io/badge/▶️-Play%20Demo%20Video-FF0000?style=for-the-badge&logo=youtube)](https://github.com/Rallycode/Portfolio-Game-Theme/raw/main/demo/20260210-1622-13.5774142.mp4)
 
-> **To embed video directly in README (playable player):**  
-> The video file is in the repository, but GitHub requires uploading via Issues to generate an embeddable link.  
-> See [demo/GET_VIDEO_EMBED.md](demo/GET_VIDEO_EMBED.md) for instructions.
+**Direct Video Link:** [📹 Watch Demo](https://github.com/Rallycode/Portfolio-Game-Theme/raw/main/demo/20260210-1622-13.5774142.mp4)
+
+---
+
+**💡 To get an embedded playable video in README:**
+
+GitHub README doesn't support direct video embedding. To make the video playable directly in the README:
+
+1. Go to [Issues](https://github.com/Rallycode/Portfolio-Game-Theme/issues) → Click "New Issue"
+2. Drag & drop the video file (`demo/20260210-1622-13.5774142.mp4`) into the issue description
+3. GitHub will generate a link like: `https://github.com/user-attachments/assets/xxxxx...`
+4. Copy that link and paste it in the README (it will show as a playable video)
+5. Close the issue (you don't need to keep it open)
+
+See [demo/GET_VIDEO_EMBED.md](demo/GET_VIDEO_EMBED.md) for detailed instructions.
 
 ## Features
 
