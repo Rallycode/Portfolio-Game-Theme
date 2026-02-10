@@ -6,15 +6,11 @@ A modern, interactive portfolio website built with Angular.
 
 Watch the demo video to see the portfolio in action:
 
-[![Demo Video](https://img.shields.io/badge/▶️-Watch%20Demo%20Video-red?style=for-the-badge)](https://github.com/Rallycode/Portfolio-Game-Theme/raw/main/demo/20260210-1622-13.5774142.mp4)
+**📹 [Click here to watch/download the demo video](https://github.com/Rallycode/Portfolio-Game-Theme/raw/main/demo/20260210-1622-13.5774142.mp4)**
 
-**Direct link:** https://github.com/Rallycode/Portfolio-Game-Theme/raw/main/demo/20260210-1622-13.5774142.mp4
-
-> **Note:** To embed the video directly (playable in README), upload it via GitHub Issues:
-> 1. Create a new issue in this repo
-> 2. Drag & drop the video file into the issue
-> 3. Copy the generated `user-attachments/assets/...` link
-> 4. Replace the link above with that URL
+> **To embed video directly in README (playable player):**  
+> The video file is in the repository, but GitHub requires uploading via Issues to generate an embeddable link.  
+> See [demo/GET_VIDEO_EMBED.md](demo/GET_VIDEO_EMBED.md) for instructions.
 
 ## Features
 
