@@ -1,0 +1,9 @@
+<section id="awards" class="section-block">
+  <div class="awards-grid">
+    <div class="award-card card-elevated" *ngFor="let award of awards">
+      <span class="award-date">{{ award.date }}</span>
+      <h3 class="award-title">{{ award.title }}</h3>
+      <p class="award-detail">{{ award.detail }}</p>
+    </div>
+  </div>
+</section>

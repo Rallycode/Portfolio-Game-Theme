@@ -1,0 +1,34 @@
+<div class="home-page">
+  <app-hero></app-hero>
+  
+  <section class="journey-section">
+    <h2 class="section-title">My Journey</h2>
+    <p class="section-hint">Click on chapters to explore the story</p>
+    <app-journey></app-journey>
+  </section>
+  
+  <section class="navigation-section">
+    <h2 class="section-title">Explore Sections</h2>
+    <div class="nav-cards-grid">
+      <a *ngFor="let card of navCards; let i = index" 
+         [routerLink]="card.route" 
+         class="nav-card"
+         [style.--card-color]="card.color"
+         [style.animation-delay.ms]="i * 100"
+         [attr.aria-label]="'Navigate to ' + card.title">
+        <div class="nav-card-icon">{{ card.icon }}</div>
+        <h3 class="nav-card-title">{{ card.title }}</h3>
+        <p class="nav-card-description">{{ card.description }}</p>
+        <div class="nav-card-arrow">→</div>
+      </a>
+    </div>
+  </section>
+  
+  <div class="scroll-hint">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M19 12l-7 7-7-7"/>
+    </svg>
+  </div>
+</div>
+
+

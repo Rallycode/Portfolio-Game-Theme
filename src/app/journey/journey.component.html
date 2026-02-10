@@ -1,0 +1,59 @@
+<div class="journey-container">
+  <!-- Story Chapters -->
+  <div class="chapters-container">
+    <div class="chapter" 
+         *ngFor="let chapter of chapters; let i = index"
+         [class.unlocked]="chapter.unlocked"
+         [class.completed]="chapter.completed"
+         [class.current]="!chapter.completed && chapter.unlocked">
+      
+      <!-- Chapter Connector Line -->
+      <div class="chapter-connector" *ngIf="i < chapters.length - 1"></div>
+      
+      <!-- Chapter Card -->
+      <div class="chapter-card" (click)="toggleChapter(i)">
+        <div class="chapter-header">
+          <div class="chapter-icon" [style.background]="chapter.color + '20'" [style.border-color]="chapter.color">
+            <span class="icon-emoji">{{ chapter.icon }}</span>
+          </div>
+          <div class="chapter-info">
+            <h3 class="chapter-title">{{ chapter.title }}</h3>
+            <p class="chapter-subtitle">{{ chapter.subtitle }}</p>
+            <div class="chapter-meta">
+              <span class="chapter-year">{{ chapter.year }}</span>
+            </div>
+          </div>
+          <div class="chapter-status">
+            <span *ngIf="chapter.completed" class="status-badge completed">Completed</span>
+            <span *ngIf="!chapter.completed && chapter.unlocked" class="status-badge current">Ongoing</span>
+          </div>
+        </div>
+
+        <!-- Chapter Content (Expandable) -->
+        <div class="chapter-content" [class.expanded]="expandedChapter === i">
+          <p class="chapter-description">{{ chapter.description }}</p>
+          
+          <div class="chapter-details">
+            <div class="achievements-section">
+              <h4 class="section-title">🏆 Achievements Unlocked</h4>
+              <ul class="achievements-list">
+                <li *ngFor="let achievement of chapter.achievements" class="achievement-item">
+                  <span class="achievement-icon">✓</span>
+                  <span>{{ achievement }}</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="skills-section">
+              <h4 class="section-title">⚡ Skills Gained</h4>
+              <div class="skills-tags">
+                <span *ngFor="let skill of chapter.skills" class="skill-tag">{{ skill }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

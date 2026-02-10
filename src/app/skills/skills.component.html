@@ -1,0 +1,18 @@
+<section id="skills" class="section-block">
+  <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem; color: var(--muted);">Technologies and tools I work with</p>
+  <div class="skills-container">
+    <div class="skill-category" *ngFor="let category of getCategories()">
+      <h3 class="category-title">{{ category }}</h3>
+      <div class="tech-grid">
+        <div class="tech-item" *ngFor="let skill of getSkillsByCategory(category)">
+          <div class="tech-card">
+            <div class="tech-icon-container">
+              <img [src]="skill.icon" [alt]="skill.name" class="tech-icon" />
+            </div>
+            <span class="tech-name">{{ skill.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<section id="experience" class="section-block">
+  <div class="section-cards">
+    <div class="job-card card-elevated" 
+         *ngFor="let job of jobs; let i = index"
+         [class.expanded]="isExpanded(i)"
+         (click)="toggleJob(i)">
+      <div class="job-header">
+        <div class="job-info">
+          <h3 class="card-title">{{ job.role }}</h3>
+          <p class="card-company">{{ job.company }}</p>
+          <p class="card-location">{{ job.location }}</p>
+        </div>
+        <div class="job-meta">
+          <span class="card-badge period">{{ job.period }}</span>
+          <svg class="expand-icon" [class.rotated]="isExpanded(i)" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="job-content" [class.visible]="isExpanded(i)">
+        <ul class="job-bullets">
+          <li *ngFor="let bullet of job.bullets">{{ bullet }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
