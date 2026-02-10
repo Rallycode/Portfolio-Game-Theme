@@ -6,12 +6,11 @@ A modern, interactive portfolio website built with Angular.
 
 Watch the demo video to see the portfolio in action:
 
-https://github.com/user-attachments/assets/20260210-1622-13.5774142.mp4
+[📹 Watch Demo Video](https://github.com/Rallycode/Portfolio-Game-Theme/raw/main/demo/20260210-1622-13.5774142.mp4)
 
-**Note:** For better performance with large video files, consider uploading to:
-- [GitHub Releases](https://github.com/Rallycode/Portfolio-Game-Theme/releases) (recommended)
-- YouTube/Vimeo and embed here
-- Or use the direct file link: [demo/20260210-1622-13.5774142.mp4](demo/20260210-1622-13.5774142.mp4)
+**Note:** The video file is ~50MB. For better viewing experience:
+- Click the link above to download/view the video
+- Or consider uploading to [GitHub Releases](https://github.com/Rallycode/Portfolio-Game-Theme/releases) or YouTube/Vimeo for streaming
 
 ## Features
 
