@@ -41,6 +41,11 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# Demo videos (uncomment if you want to exclude large video files)
+# demo/*.mp4
+# demo/*.mov
+# demo/*.avi
+
 # Environment files
 .env
 .env.local
